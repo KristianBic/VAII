@@ -9,15 +9,25 @@ const Navbar = () => {
 	const [click, setClick] = useState(false);
 	const handleClick = () => setClick(!click);
 
+	const [sticky, setSticky] = useState(false);
+	const handleSticky = () => {
+		if (window.scrollY >= 300) {
+			setSticky(true);
+		} else {
+			setSticky(false);
+		}
+	};
+	window.addEventListener("scroll", handleSticky);
+
 	return (
-		<header className="header flex">
+		<header className={sticky ? "header flex sticky header-scrolled" : "header flex"}>
 			<Link to={"/"}>
 				<img class="header-logo" src={logo} alt="Marpal Logo"></img>
 			</Link>
-			<div className="mobile-nav-open" onClick={handleClick}>
-				{click ? <GrClose size={30} /> : <FaBars size={30} />}
-			</div>
 			<nav className={click ? "open" : ""}>
+				<div className="mobile-nav-open" onClick={handleClick}>
+					{click ? <GrClose size={30} /> : <FaBars size={30} />}
+				</div>
 				<ul id="primary-navigation" class="primary-navigation flex">
 					<li id="nav_services" class="nav-services">
 						<a>Služby</a>

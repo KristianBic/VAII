@@ -38,6 +38,8 @@
 				z-index: 3;
 			}
 			@include responsive(tablet, 0) {
+				width: 6rem;
+				height: 6rem;
 				left: 50%;
 				margin: 0;
 				transform: translateX(-50%);
@@ -265,12 +267,7 @@
 	}
 
 	.services {
-		background: linear-gradient(
-			180deg,
-			rgba(248, 248, 248, 0) 0%,
-			rgba(248, 248, 248, 0) 41.46%,
-			#f8f8f8 100%
-		);
+		background: linear-gradient(180deg, rgba(248, 248, 248, 0) 0%, rgba(248, 248, 248, 0) 41.46%, #f8f8f8 100%);
 		padding-top: 5rem;
 		@media (max-width: 65em) {
 			padding-top: 4rem;
@@ -302,8 +299,7 @@
 				min-width: 40ch;
 				width: 25%;
 				background-color: $white;
-				box-shadow: 0px 24px 38px rgba(183, 183, 183, 0.14),
-					0px 9px 46px rgba(183, 183, 183, 0.12),
+				box-shadow: 0px 24px 38px rgba(183, 183, 183, 0.14), 0px 9px 46px rgba(183, 183, 183, 0.12),
 					0px 11px 15px rgba(183, 183, 183, 0.2);
 				position: relative;
 				background-size: cover;
@@ -319,8 +315,7 @@
 					//box-shadow: 0px 0px 999px 999px rgba(255, 255, 255, 0.5);
 					//z-index: 500;
 					transform: scale3d(1.006, 1.006, 1);
-					box-shadow: 0px 24px 50px rgba(183, 183, 183, 0.3),
-						0px 9px 50px rgba(183, 183, 183, 0.28),
+					box-shadow: 0px 24px 50px rgba(183, 183, 183, 0.3), 0px 9px 50px rgba(183, 183, 183, 0.28),
 						0px 11px 30px rgba(183, 183, 183, 0.36);
 
 					img {
