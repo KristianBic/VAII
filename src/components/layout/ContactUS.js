@@ -1,17 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ContactUsImage from "../../assets/image/images/contactUs.png";
 
 const ContactUS = () => {
 	return (
-		<div class="contactUs">
-			<img class="contactUs-image" src={ContactUsImage} alt="" />
-			<div class="contactUs-container">
-				<div class="contactUs-content">
+		<div className="contactUs">
+			<img className="contactUs-image" src={ContactUsImage} alt="Kontaktujte nas" />
+			<div className="contactUs-container">
+				<div className="contactUs-content">
 					<h3>Oslovila Vás naša ponuka?</h3>
 					<p>Ak áno, neváhajte nás kontaktovať a pridajte sa k viac ako tisíc spokojným zákazníkom</p>
-					<a class="button" href="<?php echo BASE_URL; ?>kontakt">
+					<Link className="button" to="/kontakt">
 						Kontaktujte nás
-					</a>
+					</Link>
 				</div>
 			</div>
 		</div>

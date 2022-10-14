@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { GrClose } from "react-icons/gr";
+import { ReactComponent as Logo } from "../../assets/image/svgs/logo.svg";
+
 import "../../assets/style/Navbar_style.css";
-import logo from "../../assets/image/svgs/logo.svg";
 
 const Navbar = () => {
 	const [click, setClick] = useState(false);
@@ -22,14 +23,14 @@ const Navbar = () => {
 	return (
 		<header className={sticky ? "header flex sticky header-scrolled" : "header flex"}>
 			<Link to={"/"}>
-				<img class="header-logo" src={logo} alt="Marpal Logo"></img>
+				<Logo className="header-logo" />
 			</Link>
 			<nav className={click ? "open" : ""}>
 				<div className="mobile-nav-open" onClick={handleClick}>
 					{click ? <GrClose size={30} /> : <FaBars size={30} />}
 				</div>
-				<ul id="primary-navigation" class="primary-navigation flex">
-					<li id="nav_services" class="nav-services">
+				<ul id="primary-navigation" className="primary-navigation flex">
+					<li id="nav_services" className="nav-services">
 						<a>Služby</a>
 						<ul className="dropdown-content">
 							<li>
@@ -55,7 +56,7 @@ const Navbar = () => {
 					<li>
 						<Link to={"/referencie"}>Referencie</Link>
 					</li>
-					<li class="nav-kontakt">
+					<li className="nav-kontakt">
 						<Link to={"/kontakt"}>Kontakt</Link>
 					</li>
 				</ul>

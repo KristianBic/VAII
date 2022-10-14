@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import mainLogo from "../../assets/image/images/marpal_png.png";
+
 import "../../assets/style/Footer_style.css";
 
 const Footer = () => {
@@ -40,22 +41,22 @@ const Footer = () => {
 					<h4>Naše služby</h4>
 					<ul>
 						<li>
-							<Link className="link" to="/vrtne-prace">
+							<Link className="link" to="/">
 								Vrtné práce
 							</Link>
 						</li>
 						<li>
-							<Link className="link" to="/stavebne-prace">
+							<Link className="link" to="/">
 								Stavebné práce
 							</Link>
 						</li>
 						<li>
-							<Link className="link" to="/zemne-vykopove-prace">
+							<Link className="link" to="/">
 								Zemné a výkopové práce
 							</Link>
 						</li>
 						<li>
-							<Link className="link" to="/hydraulicka-ruka">
+							<Link className="link" to="/">
 								Hydraulická ruka
 							</Link>
 						</li>

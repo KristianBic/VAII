@@ -283,12 +283,12 @@
 		.services-container {
 			max-width: 130rem; //flex-wrap: wrap;
 			margin: auto;
-			@include flex(none, space-between, center);
+			@include flex(row, space-between, center);
 			padding: 0 5.5rem 8rem 5.5rem;
 			flex-wrap: wrap;
 
 			@include responsive(smallerDesktop, 0) {
-				@include flex(none, space-around, center);
+				@include flex(row, space-around, center);
 			}
 
 			.service-card {
@@ -392,16 +392,16 @@
 		position: relative;
 		background-color: $primaryMain;
 		min-height: 14rem;
-		@include flex(flex, center, center);
+		@include flex(row, center, center);
 
 		.statistics-container {
-			@include flex(flex, center, center);
+			@include flex(row, center, center);
 			height: 100%;
 			padding: 0 2rem;
 			flex-wrap: wrap;
 
 			.single-stat {
-				@include flex(flex, center, center);
+				@include flex(row, center, center);
 
 				@include responsive(smallerDesktop, 0) {
 					&:before {
@@ -465,7 +465,7 @@
 
 			@include responsive(tablet, 0) {
 				//height: 15rem;
-				@include flex(flex, center, center);
+				@include flex(row, center, center);
 				flex-direction: column;
 			}
 
@@ -555,7 +555,7 @@
           margin: 0;
           grid-template-columns: repeat(1, minmax(0, 1fr));
         } */
-				@include flex(none, space-evenly, center);
+				@include flex(row, space-evenly, center);
 				flex-wrap: wrap;
 				gap: 3.4rem;
 
@@ -674,7 +674,7 @@
 
 		.gallery-showMore {
 			position: relative;
-			@include flex(flex, center, center);
+			@include flex(row, center, center);
 			margin-top: 5rem;
 			button {
 				transition: 0.6s ease-in-out;

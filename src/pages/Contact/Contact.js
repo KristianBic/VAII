@@ -3,8 +3,9 @@ import Navbar from "./../../components/layout/Navbar.js";
 import Footer from "./../../components/layout/Footer";
 import { SimpleHero } from "./../../components/layout/SimpleHero";
 import ContactForm from "./ContactForm.js";
-import "../../assets/style/Contact_style.css";
 import Map from "./Map";
+
+import "../../assets/style/Contact_style.css";
 
 const Contact = () => {
 	return (
@@ -16,7 +17,7 @@ const Contact = () => {
 					description="Ak máte záujem o niektorú z našich služieb, neváhajte využiť náš kontaktný formulár a napíšte nám správu."
 				/>
 				<ContactForm />
-				<Map />
+				{/*<Map />*/}
 			</div>
 			<Footer />
 		</div>

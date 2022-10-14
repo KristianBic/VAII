@@ -10,7 +10,7 @@
 	background-color: $gray;
 
 	.footer-container {
-		@include flex(none, center, none);
+		@include flex(row, center, flex-start);
 		flex-wrap: wrap;
 		padding-top: 2rem;
 
@@ -25,7 +25,7 @@
 			@include responsive(smallerDesktop, 0) {
 				display: block;
 				width: 100%;
-				@include flex(none, center, center);
+				@include flex(row, center, center);
 				margin: 1rem 0;
 			}
 		}

@@ -21,7 +21,9 @@
 	width: 100%;
 	height: 100vh;
 	background: $gray;
-	@include flex(none, center, center);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	.bigger-dots {
 		position: absolute;
@@ -68,7 +70,9 @@
 
 		.admin-container-left {
 			flex-basis: 50%;
-			@include flex(none, center, center);
+			display: flex;
+			justify-content: center;
+			align-items: center;
 
 			@include responsive(tablet, 0) {
 				display: none;

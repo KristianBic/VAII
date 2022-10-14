@@ -7,11 +7,11 @@ import { ServiceCard } from "./ServiceCard";
 
 const Services = () => {
 	return (
-		<div class="services">
+		<div className="services">
 			<h2>Ponuka našich služieb</h2>
-			<div class="services-container">
+			<div className="services-container">
 				<ServiceCard
-					link="/vrtne-prace"
+					link="/"
 					imageSrc={vrtnePrace}
 					imageAlt="Vŕtanie studne"
 					heading="Vŕtanie studní"
@@ -19,14 +19,14 @@ const Services = () => {
                         vrty. "
 				/>
 				<ServiceCard
-					link="/stavebne-prace"
+					link="/"
 					imageSrc={stavebnePrace}
 					imageAlt="Stavebné práce"
 					heading="Stavebné práce"
 					description="Ponúkame realizáciu všetkých druhov stavieb, od stavieb rodinných domov až po rekonštrukciu a modernizáciu všetkých typov budov."
 				/>
 				<ServiceCard
-					link="/zemne-vykopove-prace"
+					link="/"
 					imageSrc={vykopovePrace}
 					imageAlt="Výkopové práce"
 					heading="Výkopové práce"

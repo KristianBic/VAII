@@ -133,7 +133,7 @@
 							font-weight: normal;
 							letter-spacing: 0.8px;
 							color: $white;
-							@include flex(none, none, none);
+							display: flex;
 							margin-top: 0.4rem;
 							font-family: Russo One;
 							font-size: 1rem;
