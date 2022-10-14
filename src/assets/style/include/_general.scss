@@ -748,7 +748,7 @@ p {
 			@include flex(row, center, center);
 		}
 		.machine-catalog-card {
-			@include flex(column, flex-start, start);
+			@include flex(column, flex-start, flex-start);
 			min-height: 18rem;
 			background-size: cover;
 			position: relative;
